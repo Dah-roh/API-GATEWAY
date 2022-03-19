@@ -1,9 +1,11 @@
 eureka:
   client:
-    serviceUrl:
-      defaultZone: ${application.eureka.url}/eureka
-    enabled: true
     eureka-server-port: 8761
+    enabled: true
+    fetch-registry: true
+    webclient:
+      enabled: true
+    service-url: https://reloadly-eureka-service.herokuapp.com
 spring:
   application:
     name: api-gateway
