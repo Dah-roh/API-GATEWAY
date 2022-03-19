@@ -8,7 +8,7 @@ eureka:
       defaultZone: ${EUREKA_URL}/eureka
 
 server:
-  port: 8761
+  port: 9093
 APP_NAME:
   eureka-service
 
