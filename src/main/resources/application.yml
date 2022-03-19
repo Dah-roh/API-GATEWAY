@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: ${APP_NAME}.herokuapp.com
+    hostname: ${EUREKA_URL}.herokuapp.com
   client:
     registerWithEureka: true
     fetchRegistry: true
