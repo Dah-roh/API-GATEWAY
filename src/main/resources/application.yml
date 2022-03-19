@@ -1,9 +1,6 @@
 eureka:
   client:
-    eureka-server-port: 8761
-    enabled: true
-    fetch-registry: true
-    proxy-host: ${application.eureka.url}
+    service-url: ${application.eureka.url}
 spring:
   application:
     name: api-gateway
@@ -11,5 +8,6 @@ spring:
 application:
   eureka:
     url: https://reloadly-eureka-service.herokuapp.com
-
+server:
+  port: 9093
 
