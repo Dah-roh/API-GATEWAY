@@ -3,7 +3,7 @@ eureka:
     eureka-server-port: 8761
     enabled: true
     fetch-registry: true
-    service-url: ${application.eureka.url}
+    proxy-host: ${application.eureka.url}
 spring:
   application:
     name: api-gateway
