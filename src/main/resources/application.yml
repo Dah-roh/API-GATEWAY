@@ -6,6 +6,7 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: ${application.url}/eureka
+    enabled: true
 application:
   url: https://reloadly-gate.herokuapp.com
 
