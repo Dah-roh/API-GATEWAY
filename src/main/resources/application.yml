@@ -1,9 +1,15 @@
 eureka:
   instance:
-    hostname: ${APP_NAME}.herokuapp.com
+    hostname: ${application.name}.herokuapp.com
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: ${EUREKA_URL}/eureka/
+      defaultZone: ${eureka.url}/eureka/
+  url: reloadly-eureka-service.herokuapp.com
+
+spring:
+  application:
+    name: api-gateway
+
 
