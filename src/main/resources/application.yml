@@ -1,14 +1,14 @@
-#eureka:
-#  instance:
-#    hostname: ${APP_NAME}.herokuapp.com
-#  client:
-#    registerWithEureka: true
-#    fetchRegistry: true
-#    serviceUrl:
-#      defaultZone: ${EUREKA_URL}/eureka
-#
-#server:
-#  port: 9093
-#APP_NAME:
-#  api-gateway
-#
+eureka:
+  instance:
+    hostname: ${APP_NAME}.herokuapp.com
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URL}/eureka
+
+server:
+  port: 9093
+APP_NAME:
+  reloadly-api-gateway
+
