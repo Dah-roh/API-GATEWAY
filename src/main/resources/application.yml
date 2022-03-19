@@ -5,8 +5,9 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: ${eureka.url}/eureka/
-  url: reloadly-eureka-service.herokuapp.com
+      defaultZone: ${application.url}/eureka
+application:
+  url: https://reloadly-gate.herokuapp.com
 
 spring:
   application:
