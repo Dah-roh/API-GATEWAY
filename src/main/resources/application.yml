@@ -2,9 +2,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${application.eureka.url}/eureka
-    instance:
-    preferIpAddress: true
     enabled: true
+    eureka-server-port: 8761
 spring:
   application:
     name: api-gateway
