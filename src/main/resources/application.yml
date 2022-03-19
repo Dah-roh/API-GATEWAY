@@ -11,5 +11,5 @@ server:
   port: 9093
 spring:
   application:
-    name: eureka-server
+    name: api-gateway
 
