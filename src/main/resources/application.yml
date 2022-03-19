@@ -3,8 +3,6 @@ eureka:
     eureka-server-port: 8761
     enabled: true
     fetch-registry: true
-    webclient:
-      enabled: true
     service-url: ${application.eureka.url}
 spring:
   application:
