@@ -5,11 +5,5 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: https://reloadly-eureka-service.herokuapp.com/
-
-server:
-  port: 9093
-spring:
-  application:
-    name: api-gateway
+      defaultZone: ${EUREKA_URL}/eureka/
 
