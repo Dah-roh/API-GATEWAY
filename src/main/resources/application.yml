@@ -10,5 +10,5 @@ eureka:
 server:
   port: 9093
 APP_NAME:
-  eureka-service
+  api-gateway
 
