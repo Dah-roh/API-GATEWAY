@@ -8,6 +8,7 @@ eureka:
 spring:
   application:
     name: api-gateway
+
 application:
   eureka:
     url: https://reloadly-eureka-service.herokuapp.com
