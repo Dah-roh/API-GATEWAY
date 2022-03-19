@@ -5,7 +5,7 @@ eureka:
     fetch-registry: true
     webclient:
       enabled: true
-    service-url: https://reloadly-eureka-service.herokuapp.com
+    service-url: ${application.eureka.url}
 spring:
   application:
     name: api-gateway
