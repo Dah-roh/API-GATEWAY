@@ -14,7 +14,7 @@ spring:
           lower-case-service-id: true
 application:
   eureka:
-    url: https://reloadly-eureka-service.herokuapp.com
+    url: { eureka-service }.herokuapp.com
 server:
   port: 9093
 
