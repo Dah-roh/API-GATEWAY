@@ -1,10 +1,17 @@
 eureka:
   client:
-    service-url: ${application.eureka.url}
+    service-url: ${application.eureka.url}/eureka
 spring:
   application:
     name: api-gateway
-
+  cloud:
+    discovery:
+      enabled: true
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
 application:
   eureka:
     url: https://reloadly-eureka-service.herokuapp.com
