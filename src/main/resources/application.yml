@@ -1,11 +1,23 @@
----
 spring:
-  profiles: peer
+  application:
+    name: reloadly-gate
+  cloud:
+    discovery:
+      enabled: true 
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+server:
+  port: 8081
+
 eureka:
-  instance:
-    hostname: ${APP_NAME}.herokuapp.com
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+    fetch-registry: true
+    register-with-eureka: true
+    healthcheck:
+      enabled: true
     serviceUrl:
-      defaultZone: ${EUREKA_PEER_URL}/eureka/
+      defaultZone: https://reloadly-eureka-service.herokuapp.com/eureka/
